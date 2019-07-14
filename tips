@@ -1,0 +1,44 @@
+*******************************creation de project laravel*********************************
+laravel new nameProject
+**************************make:auth************************
+php artisan make:auth
+**************************php ************************
+php artisan serve
+php artisan make:Controller --resource CvController
+php artisan make:Model Cv
+
+*********************************************
+'entre page web.php's
+Route::resource('clients', 'ClientController');
+**********************************************
+
+url('{{asset('assets/images/d1.jpg')}}')
+
+*****************************************
+  <select class="form-control" id="Secteur" style="max-width: 220px; width: 220px;" v-model="product.id_sectuer">
+        <option value="0" >Toute la ville</option>
+        <option v-for="secteur in secteurs" v-bind:value="secteur.id" >@{{secteur.secteur}}</option>
+***********************************************
+@change="onChange()"
+*************************************
+ v-model="product.id_category"
+**************************************************
+v-on:click="onChange('')"
+**********************************
+v-on:click="searchProduct"
+
+**************************************les lines intereure*************************************
+{{asset('assets/  ')}}
+*******************************************lse line des images********************************
+src="{{asset('assets/images/bim.jpg')}}"
+style="background-image:url('{{asset('assets/images/slider/slider-bg1.jpg')}}');"
+****************************************************************************************
+href="{{url('/References')}}"
+**********************************************************************************
+php artisan config:clear
+php artisan cache:clear
+**************************************************************************************
+
+
+
+
